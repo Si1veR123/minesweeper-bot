@@ -1,0 +1,61 @@
+
+body {
+    margin: 0;
+}
+
+#game-parent {
+
+}
+
+#game-table {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border-collapse: collapse;
+}
+
+.cell {
+    display: flex;
+    background-color: lightgrey;
+    outline: 2px solid rgb(30, 30, 30);
+    box-shadow: 1px 1px grey inset, -4px -4px rgb(80, 80, 80) inset;
+    text-align: center;
+    justify-content: center;
+    font-family: Monaco;
+}
+
+.cell:hover {
+    background-color: rgb(150, 150, 150);
+}
+
+.cell:active {
+    background-color: rgb(120, 120, 120);
+    box-shadow: 2px 2px black inset;
+}
+
+.empty-state {
+
+}
+
+.mine {
+    background-color: green;
+}
+
+.mine-clicked-state {
+    background-color: red;
+}
+
+.empty-clicked-state {
+    background-color: grey;
+    box-shadow: 0 0;
+}
+
+.adjacency-text {
+    align-self: center;
+    font-family: Monaco;
+}
+
+.minesweeper-row {
+    display: flex;
+    margin: 0;
+}
